@@ -18,19 +18,19 @@
 - JavaScript 객체를 JSON 문자열로 변환합니다.
 - 주로 데이터를 저장하거나 전송할 때 사용합니다.
 
-\```javascript
+```javascript
 const jsonString = JSON.stringify(store);
 sessionStorage.setItem("store", jsonString);
-\```
+```
 
 #### JSON.parse
 - JSON 문자열을 JavaScript 객체로 변환합니다.
 - 주로 저장된 데이터를 다시 사용할 때 사용합니다.
 
-\```javascript
+```javascript
 const storage = sessionStorage.getItem("store");
 const jsonObject = JSON.parse(storage);
-\```
+```
 
 ### 3. 객체 구조 분해 할당 (Destructuring Assignment)
 
@@ -50,7 +50,7 @@ const { dateList, detailList, todayId, currentFunds, isFirstEdit } = JSON.parse(
 - 데이터가 없으면 `updateStorage`를 호출하여 초기 데이터를 저장합니다.
 
 #### 코드
-\```javascript
+```javascript
 function initStore() {
   // sessionStorage에서 'store' 키에 해당하는 값을 가져옵니다.
   const storage = sessionStorage.getItem("store");
@@ -68,4 +68,4 @@ function initStore() {
   store.detailList = detailList;
   store.todayId = todayId;
 }
-\```
+```
