@@ -39,9 +39,9 @@ const jsonObject = JSON.parse(storage);
 - 코드가 더 간결하고 읽기 쉬워집니다.
 
 #### 예시
-\```javascript
+```javascript
 const { dateList, detailList, todayId, currentFunds, isFirstEdit } = JSON.parse(storage);
-\```
+```
 
 ### 4. 함수 설명: `initStore`
 
