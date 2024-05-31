@@ -32,7 +32,7 @@
    - 데이터 전처리 및 분석
    - 딥러닝 프레임워크 (TensorFlow, PyTorch)
    - 자연어 처리(NLP), 컴퓨터 비전 등 AI 응용 분야
-   - GPT, Jina AI와 같은 AI 모델들의 API 사용
+   - GPT, Gemini 와 같은 AI 모델들의 API 사용
    - AI 모델을 사용한 애플리케이션 개발
 
 5. **Unity 개발**
