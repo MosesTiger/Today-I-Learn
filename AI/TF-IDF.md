@@ -6,7 +6,7 @@ TF-IDF(Term Frequency-Inverse Document Frequency)는 문서 내 단어의 중요
 
 1. **Term Frequency (TF)**: 특정 단어가 문서에서 얼마나 자주 등장하는지를 나타냅니다.
    [
-   TF(t, d) = \frac{\text{특정 단어 t의 문서 d 내 등장 횟수}}{\text{문서 d 내 모든 단어의 등장 횟수}}
+   TF(t, d) = frac{text{특정 단어 t의 문서 d 내 등장 횟수}}{text{문서 d 내 모든 단어의 등장 횟수}}
    ]
 
 2. **Inverse Document Frequency (IDF)**: 단어가 문서 전체에서 얼마나 일반적이거나 드문지를 나타냅니다.
