@@ -36,3 +36,39 @@ function MyComponent() {
 
 export default MyComponent;
 ```
+##데이터 가져오기에 대한 Suspense (실험적 기능)
+```
+import React, { Suspense } from 'react';
+
+function fetchData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Fetched Data');
+    }, 2000);
+  });
+}
+
+const resource = fetchData();
+
+function DataComponent() {
+  const data = resource.read();
+  return <div>{data}</div>;
+}
+
+function App() {
+  return (
+    <div>
+      <h1>Suspense Example</h1>
+      <Suspense fallback={<div>Loading...</div>}>
+        <DataComponent />
+      </Suspense>
+    </div>
+  );
+}
+
+export default App;
+```
+##요약
+Suspense: 비동기 작업이 완료될 때까지 컴포넌트 렌더링을 지연시키고 로딩 상태를 표시하는 기능.
+코드 분할: React.lazy와 함께 사용하여 동적으로 로드되는 컴포넌트에 대해 로딩 상태를 표시할 수 있습니다.
+데이터 가져오기: React 18에서는 데이터 가져오기에 대해 실험적 지원을 제공하며, Suspense를 사용하여 비동기 데이터 로딩을 처리할 수 있습니다.
