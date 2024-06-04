@@ -37,7 +37,8 @@ function MyComponent() {
 export default MyComponent;
 ```
 ## 데이터 가져오기에 대한 Suspense (실험적 기능)
-```import React, { Suspense } from 'react';
+```javascript
+import React, { Suspense } from 'react';
 
 function fetchData() {
   return new Promise((resolve) => {
